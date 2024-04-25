@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+}
+
+img{
+    width: 150px;
+}
+
+main{
+    width: 100vw;
+    height: 80vh;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+.input{
+    height: 45%;
+    width: 60%;
+}
+
+input{
+    height: 100%;
+    width: 100%;
+}
