@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/social.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="./js/index.js" defer></script>
     <script type="module" src="./js/main.js" defer></script>
+    <script type="module" src="./js/login.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <title>CHAT - IA</title>
 </head>
@@ -40,7 +39,7 @@
                 <input type="text" placeholder="Nome">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Senha">
-                <button class="button">Criar conta</button>
+                <button class="button" type="button">Criar conta</button>
             </form>
         </div>
         <div class="form-container sign-in">
@@ -57,31 +56,26 @@
                         <i class="fa-brands fa-apple"></i>
                     </button>
                 </div>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
+                <input type="email" id="user" placeholder="Email">
+                <input type="password" id="pass" placeholder="Senha">
                 <a href="#" class="esqueci-senha">Esqueci a senha</a>
-                <a href="./pages/home.html" class="button">Entre</a>
-
+                <button type="button" class="button" id="login">Entre</button>
             </form>
         </div>
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
                     <h1>Olá, bem vindo!</h1>
-                    <p>Crie sua conta para ter acesso a Inteligência Artificial
-</p>
-                    <button class="hidden" id="login">Entre</button>
+                    <p>Crie sua conta para ter acesso a Inteligência Artificial</p>
+                    <button class="hidden" id="register">Cadastre-se</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>Olá, bem vindo!</h1>
-                    <p>Crie sua conta para ter acesso a Inteligência Artificial
-</p>
-                    <button class="hidden" id="register">Cadastre-se</button>
+                    <p>Crie sua conta para ter acesso a Inteligência Artificial</p>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
